@@ -1,0 +1,117 @@
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\bin\Debug\migh.admin.exe
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\bin\Debug\migh.admin.pdb
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\bin\Debug\JsonTools.dll
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\bin\Debug\migh.api.dll
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\bin\Debug\taglib-sharp.dll
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\bin\Debug\migh.api.pdb
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.csprojResolveAssemblyReference.cache
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Album.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Artist.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Song.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_User.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbum.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbumCreator.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmArtist.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Album.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Artist.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Song.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_User.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmMain.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmSong.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmUser.resources
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.csproj.GenerateResource.Cache
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.exe
+C:\Users\Edu\Documents\Visual Studio 2012\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.pdb
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\bin\Debug\migh.admin.exe
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\bin\Debug\migh.admin.pdb
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\bin\Debug\JsonTools.dll
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\bin\Debug\migh.api.dll
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\bin\Debug\migh.api.pdb
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Album.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Artist.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Song.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_User.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbum.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbumCreator.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmArtist.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Album.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Artist.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Song.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_User.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmMain.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmSong.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.frmUser.resources
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.csproj.GenerateResource.Cache
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.exe
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\obj\Debug\migh.admin.pdb
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\bin\Debug\simple.ftp.dll
+C:\Users\Eduardo\Desktop\dlls\migh.admin\migh.admin\bin\Debug\simple.ftp.pdb
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\migh.admin.exe
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\migh.admin.pdb
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\JsonTools.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\migh.api.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\simple.ftp.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\migh.api.pdb
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Album.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Artist.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Song.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_User.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbum.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbumCreator.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmArtist.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration_Add_WebFile.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration_Edit_WebFile.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Album.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Artist.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Song.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_User.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmMain.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmSong.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmUser.resources
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.csproj.GenerateResource.Cache
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.exe
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.pdb
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\FileDownloader.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\taglib-sharp.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\FileDownloader.pdb
+C:\Users\Edu\Desktop\migh.admin\migh.admin\bin\Debug\FileDownloader.xml
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.csprojResolveAssemblyReference.cache
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\migh.admin.exe
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\migh.admin.pdb
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\ICSharpCode.SharpZipLib.Fakes.fakesconfig
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\ICSharpCode.SharpZipLib.Fakes.dll
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\JsonTools.dll
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\migh.api.dll
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\ICSharpCode.SharpZipLib.Fakes.xml
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\migh.api.pdb
+C:\Users\Dark\Desktop\migh.admin\migh.admin\bin\Debug\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.csprojFakesResolveAssemblyReference.cache
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Album.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Artist.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Song.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_User.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbum.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbumCreator.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmArtist.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration_Add_WebFile.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration_Edit_WebFile.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Album.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Artist.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Song.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_User.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmMain.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmSong.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmUser.resources
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.csproj.GenerateResource.Cache
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.exe
+C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.pdb

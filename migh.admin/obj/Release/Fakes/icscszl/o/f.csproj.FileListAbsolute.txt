@@ -1,0 +1,9 @@
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Release\Fakes\icscszl\b\ICSharpCode.SharpZipLib.Fakes.xml
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Release\Fakes\icscszl\b\ICSharpCode.SharpZipLib.Fakes.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Release\Fakes\icscszl\b\ICSharpCode.SharpZipLib.Fakes.pdb
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Release\Fakes\icscszl\b\ICSharpCode.SharpZipLib.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Release\Fakes\icscszl\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Release\Fakes\icscszl\b\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Release\Fakes\icscszl\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Release\Fakes\icscszl\o\ICSharpCode.SharpZipLib.Fakes.dll
+C:\Users\Edu\Desktop\migh.admin\migh.admin\obj\Release\Fakes\icscszl\o\ICSharpCode.SharpZipLib.Fakes.pdb

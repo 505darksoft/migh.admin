@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8FD852B-3A8E-4A46-A210-5C94728CCC58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>migh.admin</RootNamespace>
+    <AssemblyName>migh.admin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib.Fakes">
+      <HintPath>FakesAssemblies\ICSharpCode.SharpZipLib.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\JsonTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="migh.api, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Documents\migh\migh.api\migh.api\bin\Debug\migh.api.dll</HintPath>
+    </Reference>
+    <Reference Include="simple.ftp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\simple.ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="taglib-sharp">
+      <HintPath>..\..\taglib-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs" />
+    <Compile Include="frmAdd_Album.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdd_Album.Designer.cs">
+      <DependentUpon>frmAdd_Album.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdd_Artist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdd_Artist.Designer.cs">
+      <DependentUpon>frmAdd_Artist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdd_Song.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdd_Song.Designer.cs">
+      <DependentUpon>frmAdd_Song.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdd_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdd_User.Designer.cs">
+      <DependentUpon>frmAdd_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlbum.Designer.cs">
+      <DependentUpon>frmAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlbumCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlbumCreator.Designer.cs">
+      <DependentUpon>frmAlbumCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArtist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArtist.Designer.cs">
+      <DependentUpon>frmArtist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguration.Designer.cs">
+      <DependentUpon>frmConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguration_Add_WebFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguration_Add_WebFile.Designer.cs">
+      <DependentUpon>frmConfiguration_Add_WebFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguration_Edit_WebFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguration_Edit_WebFile.Designer.cs">
+      <DependentUpon>frmConfiguration_Edit_WebFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEdit_Album.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEdit_Album.Designer.cs">
+      <DependentUpon>frmEdit_Album.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEdit_Artist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEdit_Artist.Designer.cs">
+      <DependentUpon>frmEdit_Artist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEdit_Song.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEdit_Song.Designer.cs">
+      <DependentUpon>frmEdit_Song.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEdit_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEdit_User.Designer.cs">
+      <DependentUpon>frmEdit_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSong.Designer.cs">
+      <DependentUpon>frmSong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAdd_Album.resx">
+      <DependentUpon>frmAdd_Album.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdd_Artist.resx">
+      <DependentUpon>frmAdd_Artist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdd_Song.resx">
+      <DependentUpon>frmAdd_Song.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdd_User.resx">
+      <DependentUpon>frmAdd_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlbum.resx">
+      <DependentUpon>frmAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlbumCreator.resx">
+      <DependentUpon>frmAlbumCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArtist.resx">
+      <DependentUpon>frmArtist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguration.resx">
+      <DependentUpon>frmConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguration_Add_WebFile.resx">
+      <DependentUpon>frmConfiguration_Add_WebFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguration_Edit_WebFile.resx">
+      <DependentUpon>frmConfiguration_Edit_WebFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEdit_Album.resx">
+      <DependentUpon>frmEdit_Album.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEdit_Artist.resx">
+      <DependentUpon>frmEdit_Artist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEdit_Song.resx">
+      <DependentUpon>frmEdit_Song.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEdit_User.resx">
+      <DependentUpon>frmEdit_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSong.resx">
+      <DependentUpon>frmSong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\ICSharpCode.SharpZipLib.fakes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
