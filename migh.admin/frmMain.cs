@@ -153,5 +153,11 @@ namespace migh.admin
         {
             ServerURL = txtServer.Text;
         }
+
+        private void btnAlbumCreator_Click(object sender, EventArgs e)
+        {
+            frmAlbumCreator frm = new frmAlbumCreator();
+            frm.ShowDialog();
+        }
     }
 }

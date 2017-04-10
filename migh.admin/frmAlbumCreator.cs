@@ -78,6 +78,7 @@ namespace migh.admin
             {
                 foreach (string s in Directory.GetFiles(path).Select(Path.GetFileName))
                 {
+                    
                     if (s.ToLower().Contains(".mp3") || s.ToLower().Contains(".m4a"))
                     {
                         try
@@ -85,7 +86,26 @@ namespace migh.admin
                             string filepath = directory + "\\" + s;
 
                             TagLib.File tagfile = TagLib.File.Create(filepath);
-
+                            if(!System.IO.File.Exists(path + "/Cover.jpg"))
+                            {
+                                
+                                if (tagfile.Tag.Pictures.Length >= 1)
+                                {
+                                    var bin = (byte[])(tagfile.Tag.Pictures[0].Data.Data);
+                                    try
+                                    {
+                                        using (var fs = new FileStream(path + "/Cover.jpg", FileMode.Create, FileAccess.Write))
+                                        {
+                                            fs.Write(bin, 0, bin.Length);
+                                            
+                                        }
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        
+                                    }
+                                }
+                            }
                             Song song = new Song();
                             Artist art = admin.Library.artist_list.FirstOrDefault(a => a.name.Equals(tagfile.Tag.FirstAlbumArtist));
                             if(art != null)

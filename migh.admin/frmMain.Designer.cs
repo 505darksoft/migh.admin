@@ -40,6 +40,7 @@
             this.lblSessionVersion = new System.Windows.Forms.Label();
             this.txtPIN = new System.Windows.Forms.TextBox();
             this.txtServer = new System.Windows.Forms.TextBox();
+            this.btnAlbumCreator = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnUser
@@ -169,11 +170,22 @@
             this.txtServer.TabIndex = 11;
             this.txtServer.TextChanged += new System.EventHandler(this.txtServer_TextChanged);
             // 
+            // btnAlbumCreator
+            // 
+            this.btnAlbumCreator.Location = new System.Drawing.Point(255, 92);
+            this.btnAlbumCreator.Name = "btnAlbumCreator";
+            this.btnAlbumCreator.Size = new System.Drawing.Size(75, 23);
+            this.btnAlbumCreator.TabIndex = 12;
+            this.btnAlbumCreator.Text = ":)";
+            this.btnAlbumCreator.UseVisualStyleBackColor = true;
+            this.btnAlbumCreator.Click += new System.EventHandler(this.btnAlbumCreator_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 179);
+            this.Controls.Add(this.btnAlbumCreator);
             this.Controls.Add(this.txtServer);
             this.Controls.Add(this.txtPIN);
             this.Controls.Add(this.lblSessionVersion);
@@ -212,5 +224,6 @@
         private System.Windows.Forms.Label lblSessionVersion;
         private System.Windows.Forms.TextBox txtPIN;
         private System.Windows.Forms.TextBox txtServer;
+        private System.Windows.Forms.Button btnAlbumCreator;
     }
 }
