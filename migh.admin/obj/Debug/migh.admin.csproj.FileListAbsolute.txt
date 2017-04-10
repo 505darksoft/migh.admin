@@ -115,3 +115,32 @@ C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.frmUser.resourc
 C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.csproj.GenerateResource.Cache
 C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.exe
 C:\Users\Dark\Desktop\migh.admin\migh.admin\obj\Debug\migh.admin.pdb
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\migh.admin.exe
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\migh.admin.pdb
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\ICSharpCode.SharpZipLib.Fakes.fakesconfig
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\ICSharpCode.SharpZipLib.Fakes.dll
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\JsonTools.dll
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\ICSharpCode.SharpZipLib.Fakes.xml
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Album.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Artist.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Song.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_User.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbum.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAlbumCreator.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmArtist.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration_Add_WebFile.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmConfiguration_Edit_WebFile.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Album.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Artist.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_Song.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmEdit_User.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmMain.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmSong.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmUser.resources
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.csproj.GenerateResource.Cache
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.exe
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.pdb

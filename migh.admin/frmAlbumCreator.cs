@@ -70,10 +70,10 @@ namespace migh.admin
             listSong.Items.Clear();
             string directory = txtDirectory.Text.Trim();
             songs = new List<Song>();
-            Album album = (Album)cbxAlbum.SelectedItem;
-            Artist artist = Artist.get(admin.Library.artist_list, album.artist_id);
+            Album album = new Album();
+            Artist artist = new Artist();
             string path = txtDirectory.Text.Trim();
-
+            
             try
             {
                 foreach (string s in Directory.GetFiles(path).Select(Path.GetFileName))
@@ -87,13 +87,50 @@ namespace migh.admin
                             TagLib.File tagfile = TagLib.File.Create(filepath);
 
                             Song song = new Song();
-
+                            Artist art = admin.Library.artist_list.FirstOrDefault(a => a.name.Equals(tagfile.Tag.FirstAlbumArtist));
+                            if(art != null)
+                            {
+                                artist = art;
+                            }
+                            else
+                            {
+                                artist.name = tagfile.Tag.FirstAlbumArtist;
+                                artist.url_name = Tools.ConvertToGitHubFolder(artist.name);
+                                while (Artist.id_exists(admin.Library.artist_list, artist.id))
+                                {
+                                    artist.id++;
+                                }
+                                admin.Library.artist_list.Add(artist);
+                            }
+                            Album alb = admin.Library.album_list.FirstOrDefault(a => a.name.Equals(tagfile.Tag.Album));
+                            if (alb != null)
+                            {
+                                album = alb;
+                            }
+                            else
+                            {
+                                album.name = tagfile.Tag.Album;
+                                album.url_name = Tools.ConvertToGitHubFolder(album.name);
+                                album.artist_id = artist.id;
+                                album.cover_url = string.Format(admin.Library.configuration.AlbumCoverImageFileURLFormat, artist.url_name, album.url_name);
+                                album.url_name = Tools.ConvertToGitHubFolder(album.name);
+                                while (Album.id_exists(admin.Library.album_list, album.id))
+                                {
+                                    album.id++;
+                                }
+                                admin.Library.album_list.Add(album);
+                            }
+                                                        
+                            while (Song.id_exists(admin.Library.song_list, song.id))
+                            {
+                                song.id++;
+                            }
                             song.artist_id = artist.id;
                             song.album_id = album.id;
                             song.name = tagfile.Tag.Title;
                             song.file_name = s;
                             song.url_name = Tools.ConvertToGitHubFile(song.file_name, admin.Library.configuration.GitHubFile_TextToReplace_List);
-                            songs.Add(song);
+                            admin.Library.song_list.Add(song);
                         }
                         catch (Exception ex)
                         {
@@ -126,32 +163,38 @@ namespace migh.admin
         {
             if(MessageBox.Show("¿Estás seguro?", "Guardar Canciones", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                try
-                {
-                    Album album = (Album)cbxAlbum.SelectedItem;
-                    List<Song> aux = new List<Song>();
-                    foreach (Song song in admin.Library.song_list)
-                    {
-                        aux.Add(song);
-                    }
-                    foreach (Song song in aux)
-                    {
-                        if (song.album_id == album.id)
-                        {
-                            Song.remove(ref admin.Library.song_list, song.id);
-                        }
-                    }
-                    foreach (Song song in songs)
-                    {
-                        while (Song.id_exists(admin.Library.song_list, song.id))
-                        {
-                            song.id++;
-                        }
-                        admin.Library.song_list.Add(song);
-                    }
-                    this.DialogResult = DialogResult.OK;
-                }
-                catch { }
+                //try
+                //{
+                    
+                //    List<Song> aux = new List<Song>();
+                //    foreach (Song song in admin.Library.song_list)
+                //    {
+                //        Album alb = admin.Library.album_list.FirstOrDefault(a => a.name.Equals(song.))
+                //        Album album = Album.get(admin.Library.album_list, song.artist_id);
+                //        if(album == null)
+                //        {
+
+                //        }
+                //        aux.Add(song);
+                //    }
+                //    foreach (Song song in aux)
+                //    {
+                //        if (song.album_id == album.id)
+                //        {
+                //            Song.remove(ref admin.Library.song_list, song.id);
+                //        }
+                //    }
+                //    foreach (Song song in songs)
+                //    {
+                //        while (Song.id_exists(admin.Library.song_list, song.id))
+                //        {
+                //            song.id++;
+                //        }
+                //        admin.Library.song_list.Add(song);
+                //    }
+                //    this.DialogResult = DialogResult.OK;
+                //}
+                //catch { }
             }
         }
 
@@ -201,6 +244,14 @@ namespace migh.admin
                 txtFile.Text = "";
                 txtURLName.Text = "";
             }
+        }
+
+        private void chkNuevo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkNuevo.Checked)
+                cbxAlbum.Enabled = false;
+            else
+                cbxAlbum.Enabled = true;
         }
     }
 }

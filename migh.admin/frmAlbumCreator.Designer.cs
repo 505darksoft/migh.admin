@@ -45,6 +45,7 @@
             this.txtArtist = new System.Windows.Forms.TextBox();
             this.txtFile = new System.Windows.Forms.TextBox();
             this.txtURLName = new System.Windows.Forms.TextBox();
+            this.chkNuevo = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -68,9 +69,9 @@
             // 
             this.cbxAlbum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAlbum.FormattingEnabled = true;
-            this.cbxAlbum.Location = new System.Drawing.Point(62, 38);
+            this.cbxAlbum.Location = new System.Drawing.Point(62, 49);
             this.cbxAlbum.Name = "cbxAlbum";
-            this.cbxAlbum.Size = new System.Drawing.Size(526, 21);
+            this.cbxAlbum.Size = new System.Drawing.Size(462, 21);
             this.cbxAlbum.TabIndex = 2;
             this.cbxAlbum.SelectedIndexChanged += new System.EventHandler(this.cbxAlbum_SelectedIndexChanged);
             // 
@@ -194,11 +195,23 @@
             this.txtURLName.Size = new System.Drawing.Size(261, 20);
             this.txtURLName.TabIndex = 20;
             // 
+            // chkNuevo
+            // 
+            this.chkNuevo.AutoSize = true;
+            this.chkNuevo.Location = new System.Drawing.Point(530, 51);
+            this.chkNuevo.Name = "chkNuevo";
+            this.chkNuevo.Size = new System.Drawing.Size(58, 17);
+            this.chkNuevo.TabIndex = 21;
+            this.chkNuevo.Text = "Nuevo";
+            this.chkNuevo.UseVisualStyleBackColor = true;
+            this.chkNuevo.CheckedChanged += new System.EventHandler(this.chkNuevo_CheckedChanged);
+            // 
             // frmAlbumCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 323);
+            this.Controls.Add(this.chkNuevo);
             this.Controls.Add(this.txtURLName);
             this.Controls.Add(this.txtFile);
             this.Controls.Add(this.txtArtist);
@@ -246,5 +259,6 @@
         private System.Windows.Forms.TextBox txtArtist;
         private System.Windows.Forms.TextBox txtFile;
         private System.Windows.Forms.TextBox txtURLName;
+        private System.Windows.Forms.CheckBox chkNuevo;
     }
 }
