@@ -30,9 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtDirectory = new System.Windows.Forms.TextBox();
-            this.cbxAlbum = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnCreate = new System.Windows.Forms.Button();
+            this.btnAnalizar = new System.Windows.Forms.Button();
             this.listSong = new System.Windows.Forms.ListBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,7 +43,11 @@
             this.txtArtist = new System.Windows.Forms.TextBox();
             this.txtFile = new System.Windows.Forms.TextBox();
             this.txtURLName = new System.Windows.Forms.TextBox();
-            this.chkNuevo = new System.Windows.Forms.CheckBox();
+            this.btnSelectMusicFolder = new System.Windows.Forms.Button();
+            this.folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtGitHubFolder = new System.Windows.Forms.TextBox();
+            this.btnSelectGitHubFolder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -61,46 +63,28 @@
             // 
             this.txtDirectory.Location = new System.Drawing.Point(62, 12);
             this.txtDirectory.Name = "txtDirectory";
-            this.txtDirectory.Size = new System.Drawing.Size(526, 20);
+            this.txtDirectory.ReadOnly = true;
+            this.txtDirectory.Size = new System.Drawing.Size(462, 20);
             this.txtDirectory.TabIndex = 1;
             this.txtDirectory.TextChanged += new System.EventHandler(this.txtDirectory_TextChanged);
             // 
-            // cbxAlbum
+            // btnAnalizar
             // 
-            this.cbxAlbum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxAlbum.FormattingEnabled = true;
-            this.cbxAlbum.Location = new System.Drawing.Point(62, 49);
-            this.cbxAlbum.Name = "cbxAlbum";
-            this.cbxAlbum.Size = new System.Drawing.Size(462, 21);
-            this.cbxAlbum.TabIndex = 2;
-            this.cbxAlbum.SelectedIndexChanged += new System.EventHandler(this.cbxAlbum_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Álbum";
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCreate.Location = new System.Drawing.Point(252, 288);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(75, 23);
-            this.btnCreate.TabIndex = 4;
-            this.btnCreate.Text = "Crear";
-            this.btnCreate.UseVisualStyleBackColor = true;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            this.btnAnalizar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnAnalizar.Location = new System.Drawing.Point(252, 288);
+            this.btnAnalizar.Name = "btnAnalizar";
+            this.btnAnalizar.Size = new System.Drawing.Size(75, 23);
+            this.btnAnalizar.TabIndex = 4;
+            this.btnAnalizar.Text = "Analizar";
+            this.btnAnalizar.UseVisualStyleBackColor = true;
+            this.btnAnalizar.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // listSong
             // 
             this.listSong.FormattingEnabled = true;
-            this.listSong.Location = new System.Drawing.Point(12, 86);
+            this.listSong.Location = new System.Drawing.Point(12, 73);
             this.listSong.Name = "listSong";
-            this.listSong.Size = new System.Drawing.Size(234, 225);
+            this.listSong.Size = new System.Drawing.Size(234, 238);
             this.listSong.TabIndex = 5;
             this.listSong.SelectedIndexChanged += new System.EventHandler(this.listSong_SelectedIndexChanged);
             // 
@@ -195,23 +179,52 @@
             this.txtURLName.Size = new System.Drawing.Size(261, 20);
             this.txtURLName.TabIndex = 20;
             // 
-            // chkNuevo
+            // btnSelectMusicFolder
             // 
-            this.chkNuevo.AutoSize = true;
-            this.chkNuevo.Location = new System.Drawing.Point(530, 51);
-            this.chkNuevo.Name = "chkNuevo";
-            this.chkNuevo.Size = new System.Drawing.Size(58, 17);
-            this.chkNuevo.TabIndex = 21;
-            this.chkNuevo.Text = "Nuevo";
-            this.chkNuevo.UseVisualStyleBackColor = true;
-            this.chkNuevo.CheckedChanged += new System.EventHandler(this.chkNuevo_CheckedChanged);
+            this.btnSelectMusicFolder.Location = new System.Drawing.Point(530, 10);
+            this.btnSelectMusicFolder.Name = "btnSelectMusicFolder";
+            this.btnSelectMusicFolder.Size = new System.Drawing.Size(58, 23);
+            this.btnSelectMusicFolder.TabIndex = 22;
+            this.btnSelectMusicFolder.Text = "...";
+            this.btnSelectMusicFolder.UseVisualStyleBackColor = true;
+            this.btnSelectMusicFolder.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "GitHub";
+            // 
+            // txtGitHubFolder
+            // 
+            this.txtGitHubFolder.Location = new System.Drawing.Point(62, 38);
+            this.txtGitHubFolder.Name = "txtGitHubFolder";
+            this.txtGitHubFolder.ReadOnly = true;
+            this.txtGitHubFolder.Size = new System.Drawing.Size(462, 20);
+            this.txtGitHubFolder.TabIndex = 24;
+            // 
+            // btnSelectGitHubFolder
+            // 
+            this.btnSelectGitHubFolder.Location = new System.Drawing.Point(530, 36);
+            this.btnSelectGitHubFolder.Name = "btnSelectGitHubFolder";
+            this.btnSelectGitHubFolder.Size = new System.Drawing.Size(58, 23);
+            this.btnSelectGitHubFolder.TabIndex = 25;
+            this.btnSelectGitHubFolder.Text = "...";
+            this.btnSelectGitHubFolder.UseVisualStyleBackColor = true;
+            this.btnSelectGitHubFolder.Click += new System.EventHandler(this.btnSelectGitHubFolder_Click);
             // 
             // frmAlbumCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 323);
-            this.Controls.Add(this.chkNuevo);
+            this.Controls.Add(this.btnSelectGitHubFolder);
+            this.Controls.Add(this.txtGitHubFolder);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnSelectMusicFolder);
             this.Controls.Add(this.txtURLName);
             this.Controls.Add(this.txtFile);
             this.Controls.Add(this.txtArtist);
@@ -224,9 +237,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.listSong);
-            this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbxAlbum);
+            this.Controls.Add(this.btnAnalizar);
             this.Controls.Add(this.txtDirectory);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -244,9 +255,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDirectory;
-        private System.Windows.Forms.ComboBox cbxAlbum;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnAnalizar;
         private System.Windows.Forms.ListBox listSong;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label3;
@@ -259,6 +268,10 @@
         private System.Windows.Forms.TextBox txtArtist;
         private System.Windows.Forms.TextBox txtFile;
         private System.Windows.Forms.TextBox txtURLName;
-        private System.Windows.Forms.CheckBox chkNuevo;
+        private System.Windows.Forms.Button btnSelectMusicFolder;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowser;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtGitHubFolder;
+        private System.Windows.Forms.Button btnSelectGitHubFolder;
     }
 }
