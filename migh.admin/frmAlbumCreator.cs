@@ -77,14 +77,14 @@ namespace migh.admin
                                 }
                             }
                             Song song = new Song();
-                            Artist art = admin.Library.artist_list.FirstOrDefault(a => a.name.Equals(tagfile.Tag.FirstAlbumArtist));
+                            Artist art = admin.Library.artist_list.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.FirstAlbumArtist.ToLower()));
                             if(art != null)
                             {
                                 artist = art;
                             }
                             else
                             {
-                                Artist artx = artists.FirstOrDefault(a => a.name.Equals(tagfile.Tag.FirstAlbumArtist));
+                                Artist artx = artists.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.FirstAlbumArtist.ToLower()));
                                 if (artx != null)
                                 {
                                     artist = artx;
@@ -100,14 +100,14 @@ namespace migh.admin
                                     artists.Add(artist);
                                 }
                             }
-                            Album alb = admin.Library.album_list.FirstOrDefault(a => a.name.Equals(tagfile.Tag.Album));
+                            Album alb = admin.Library.album_list.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.Album.ToLower()));
                             if (alb != null)
                             {
                                 album = alb;
                             }
                             else
                             {
-                                Album albx = albums.FirstOrDefault(a => a.name.Equals(tagfile.Tag.Album));
+                                Album albx = albums.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.Album.ToLower()));
                                 if (albx != null)
                                 {
                                     album = albx;
@@ -175,7 +175,10 @@ namespace migh.admin
                     }
                     foreach (Song song in songs)
                     {
-                        admin.Library.song_list.Add(song);
+                        if(!admin.Library.song_list.Contains(song))
+                        {
+                            admin.Library.song_list.Add(song);
+                        }
                     }
                     if (!Directory.Exists(txtGitHubFolder.Text))
                     {
@@ -221,6 +224,12 @@ namespace migh.admin
                 {
 
                 }
+                finally
+                {
+                    songs.Clear();
+                    albums.Clear();
+                    artists.Clear();
+                }
             }
         }
 
@@ -244,8 +253,15 @@ namespace migh.admin
                 {
                     Song song = (Song)listSong.SelectedItem;
                     Album album = Album.get(albums, song.album_id);
+                    if(album == null)
+                    {
+                        album = Album.get(admin.Library.album_list, song.album_id);
+                    }
                     Artist artist = Artist.get(artists, song.artist_id);
-
+                    if (artist == null)
+                    {
+                        artist = Artist.get(admin.Library.artist_list, song.artist_id);
+                    }
                     txtName.Text = song.name;
                     txtAlbum.Text = album.name;
                     txtArtist.Text = artist.name;

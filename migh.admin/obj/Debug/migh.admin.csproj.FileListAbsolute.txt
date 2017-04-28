@@ -174,3 +174,4 @@ C:\Users\Eduardo\Desktop\migh.admin-master\migh.admin\obj\Debug\migh.admin.frmUs
 C:\Users\Eduardo\Desktop\migh.admin-master\migh.admin\obj\Debug\migh.admin.csproj.GenerateResource.Cache
 C:\Users\Eduardo\Desktop\migh.admin-master\migh.admin\obj\Debug\migh.admin.exe
 C:\Users\Eduardo\Desktop\migh.admin-master\migh.admin\obj\Debug\migh.admin.pdb
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.csprojResolveAssemblyReference.cache
