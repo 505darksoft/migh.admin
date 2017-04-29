@@ -130,6 +130,10 @@ namespace migh.admin
                             {
                                 song.id++;
                             }
+                            while(Song.id_exists(songs, song.id))
+                            {
+                                song.id++;
+                            }
                             song.artist_id = artist.id;
                             song.album_id = album.id;
                             song.name = tagfile.Tag.Title;

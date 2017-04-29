@@ -23,6 +23,10 @@ namespace migh.admin
         private void frmMain_Load(object sender, EventArgs e)
         {
             admin.Library = (Library.read_local(Configuration.LibraryFileName)).ToObject<Library>();
+            
+            admin.Library.song_list.RemoveAll(s => s.artist_id == 36);
+            admin.Library.album_list.RemoveAll(s => s.artist_id == 36);
+            admin.Library.artist_list.RemoveAll(s => s.id == 36);
             //Configuration.Load();
             RefreshComboWebFile();
             SessionVersion = admin.Library.Version + 1;
