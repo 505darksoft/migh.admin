@@ -153,6 +153,7 @@ C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\De
 C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\ICSharpCode.SharpZipLib.Fakes.xml
 C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\bin\Debug\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.csprojFakesResolveAssemblyReference.cache
 C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Album.resources
 C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Artist.resources
 C:\Users\Dark\Documents\Visual Studio 2017\Projects\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Song.resources
