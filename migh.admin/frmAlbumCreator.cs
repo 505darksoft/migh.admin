@@ -77,34 +77,30 @@ namespace migh.admin
                                 }
                             }
                             Song song = new Song();
-                            string _Artist = string.Empty;
-                            
+
                             if(tagfile.Tag.FirstAlbumArtist == null || tagfile.Tag.FirstAlbumArtist == string.Empty)
                             {
-                            	_Artist = tagfile.Tag.FirstPerformer;
+                            	artist.name = tagfile.Tag.FirstPerformer;
                             }
                             else
                             {
-                            	_Artist = tagfile.Tag.FirstAlbumArtist;
+                            	artist.name = tagfile.Tag.FirstAlbumArtist;
                             }
                             
-                            Artist art = admin.Library.artist_list.FirstOrDefault(a => a.name.ToLower().Equals(_Artist.ToLower()));
+                            Artist art = admin.Library.artist_list.FirstOrDefault(a => a.name.ToLower().Equals(artist.name.ToLower()));
                             if(art != null)
                             {
                                 artist = art;
                             }
                             else
                             {
-                            	
-                                Artist artx = artists.FirstOrDefault(a => a.name.ToLower().Equals(_Artist.ToLower()));
+                                Artist artx = artists.FirstOrDefault(a => a.name.ToLower().Equals(artist.name.ToLower()));
                                 if (artx != null)
                                 {
                                     artist = artx;
                                 }
                                 else
                                 {
-                                	
-                                    
                                     artist.url_name = Tools.ConvertToGitHubFolder(artist.name);
                                     while (Artist.id_exists(admin.Library.artist_list, artist.id))
                                     {
