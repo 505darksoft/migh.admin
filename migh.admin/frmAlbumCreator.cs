@@ -77,21 +77,34 @@ namespace migh.admin
                                 }
                             }
                             Song song = new Song();
-                            Artist art = admin.Library.artist_list.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.FirstAlbumArtist.ToLower()));
+                            string _Artist = string.Empty;
+                            
+                            if(tagfile.Tag.FirstAlbumArtist == null || tagfile.Tag.FirstAlbumArtist == string.Empty)
+                            {
+                            	_Artist = tagfile.Tag.FirstPerformer;
+                            }
+                            else
+                            {
+                            	_Artist = tagfile.Tag.FirstAlbumArtist;
+                            }
+                            
+                            Artist art = admin.Library.artist_list.FirstOrDefault(a => a.name.ToLower().Equals(_Artist.ToLower()));
                             if(art != null)
                             {
                                 artist = art;
                             }
                             else
                             {
-                                Artist artx = artists.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.FirstAlbumArtist.ToLower()));
+                            	
+                                Artist artx = artists.FirstOrDefault(a => a.name.ToLower().Equals(_Artist.ToLower()));
                                 if (artx != null)
                                 {
                                     artist = artx;
                                 }
                                 else
                                 {
-                                    artist.name = tagfile.Tag.FirstAlbumArtist;
+                                	
+                                    
                                     artist.url_name = Tools.ConvertToGitHubFolder(artist.name);
                                     while (Artist.id_exists(admin.Library.artist_list, artist.id))
                                     {
