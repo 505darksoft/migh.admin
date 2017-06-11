@@ -30,7 +30,8 @@ namespace migh.admin
             file.FileName = "gh";
             txtGitHubFolder.Text = file.Read<string>();
         }
-
+        List<string> Covers = new List<string>();
+        List<string> Files = new List<string>();
         List<Song> songs = new List<Song>();
         List<Album> albums = new List<Album>();
         List<Artist> artists = new List<Artist>();
@@ -43,12 +44,124 @@ namespace migh.admin
             Album album = new Album();
             Artist artist = new Artist();
             string path = txtDirectory.Text.Trim();
-            
+            string[] d = Directory.GetFiles(path, "*.m4a*", System.IO.SearchOption.AllDirectories);
+            try
+            {
+            	foreach(string str in d)
+            	{
+            		TagLib.File tagfile = TagLib.File.Create(str);
+            		try
+            		{
+            			if(!System.IO.File.Exists(Path.GetDirectoryName(str) + "/Cover.jpg"))
+	                    {
+	            			if (tagfile.Tag.Pictures.Length >= 1)
+	                        {
+	                            var bin = (byte[])(tagfile.Tag.Pictures[0].Data.Data);
+	                            try
+	                            {
+	                                using (var fs = new FileStream(Path.GetDirectoryName(str) + "/Cover.jpg", FileMode.Create, FileAccess.Write))
+	                                {
+	                                    fs.Write(bin, 0, bin.Length);
+	                                }
+	                            }
+	                            catch (Exception ex)
+	                            {
+	                                
+	                            }
+	                        }
+	            		}
+            			
+            			Song song = new Song();
+	
+                        if(tagfile.Tag.FirstAlbumArtist == null || tagfile.Tag.FirstAlbumArtist == string.Empty)
+                        {
+                        	artist.name = tagfile.Tag.FirstPerformer;
+                        }
+                        else
+                        {
+                        	artist.name = tagfile.Tag.FirstAlbumArtist;
+                        }
+                        
+                        Artist art = admin.Library.artist_list.FirstOrDefault(a => a.name.ToLower().Equals(artist.name.ToLower()));
+                        if(art != null)
+                        {
+                            artist = art;
+                        }
+                        else
+                        {
+                            Artist artx = artists.FirstOrDefault(a => a.name.ToLower().Equals(artist.name.ToLower()));
+                            if (artx != null)
+                            {
+                                artist = artx;
+                            }
+                            else
+                            {
+                                artist.url_name = Tools.ConvertToGitHubFolder(artist.name);
+                                while (Artist.id_exists(admin.Library.artist_list, artist.id))
+                                {
+                                    artist.id++;
+                                }
+                                artists.Add(artist);
+                            }
+                        }
+                        Album alb = admin.Library.album_list.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.Album.ToLower()));
+                        if (alb != null)
+                        {
+                            album = alb;
+                        }
+                        else
+                        {
+                            Album albx = albums.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.Album.ToLower()));
+                            if (albx != null)
+                            {
+                                album = albx;
+                            }
+                            else
+                            {
+                                album.name = tagfile.Tag.Album;
+                                album.url_name = Tools.ConvertToGitHubFolder(album.name);
+                                album.artist_id = artist.id;
+                                album.cover_url = string.Format(admin.Library.configuration.AlbumCoverImageFileURLFormat, artist.url_name, album.url_name);
+                                album.url_name = Tools.ConvertToGitHubFolder(album.name);
+                                while (Album.id_exists(admin.Library.album_list, album.id))
+                                {
+                                    album.id++;
+                                }
+                                albums.Add(album);
+                            }
+                        }
+                        while (Song.id_exists(admin.Library.song_list, song.id))
+                        {
+                            song.id++;
+                        }
+                        while(Song.id_exists(songs, song.id))
+                        {
+                            song.id++;
+                        }
+                        song.artist_id = artist.id;
+                        song.album_id = album.id;
+                        song.name = tagfile.Tag.Title;
+                        song.file_name = Path.GetFileName(str);
+                        song.url_name = Tools.ConvertToGitHubFile(song.file_name, admin.Library.configuration.GitHubFile_TextToReplace_List);
+                        Covers.Add(Path.GetDirectoryName(str) + "/Cover.jpg");
+                        Files.Add(str);
+                        songs.Add(song);
+            		}
+            		catch(Exception ex)
+            		{
+            			MessageBox.Show(ex.Message);
+            		}
+            	}
+            	foreach (Song s in songs)
+                {
+                    listSong.Items.Add(s);
+                }
+            }
+            /*
             try
             {
                 foreach (string s in Directory.GetFiles(path).Select(Path.GetFileName))
                 {
-                    
                     if (s.ToLower().Contains(".mp3") || s.ToLower().Contains(".m4a"))
                     {
                         try
@@ -166,7 +279,13 @@ namespace migh.admin
             {
                 
             }
+            */
+           catch
+           {
+           	
+           }
         }
+        
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             
@@ -207,7 +326,7 @@ namespace migh.admin
                             }
                         }
                     }
-                    
+                    int i = 0;
                     foreach (Song s in songs)
                     {
                         Artist a = Artist.get(admin.Library.artist_list, s.artist_id);
@@ -223,13 +342,14 @@ namespace migh.admin
                         
                         if (!System.IO.File.Exists(txtGitHubFolder.Text + "\\" + a.url_name + "\\" + al.url_name + "\\Cover.jpg"))
                         {
-                            if (System.IO.File.Exists(txtDirectory.Text + "\\Cover.jpg"))
+                        	if (System.IO.File.Exists(Covers[i]))
                             {
-                                System.IO.File.Copy(txtDirectory.Text + "\\Cover.jpg", txtGitHubFolder.Text + "\\" + a.url_name + "\\" + al.url_name + "\\Cover.jpg");
+                                System.IO.File.Copy(Covers[i], txtGitHubFolder.Text + "\\" + a.url_name + "\\" + al.url_name + "\\Cover.jpg");
                             }
                         }
 
-                        System.IO.File.Copy(txtDirectory.Text + "\\" + s.file_name, txtGitHubFolder.Text + "\\" + a.url_name + "\\" + al.url_name + "\\" + s.file_name);
+                        System.IO.File.Copy(Files[i], txtGitHubFolder.Text + "\\" + a.url_name + "\\" + al.url_name + "\\" + s.file_name);
+                    	i++;
                     }
                     this.DialogResult = DialogResult.OK;
                 }
