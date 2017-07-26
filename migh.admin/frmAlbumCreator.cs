@@ -44,7 +44,7 @@ namespace migh.admin
             Album album = new Album();
             Artist artist = new Artist();
             string path = txtDirectory.Text.Trim();
-            string[] d = Directory.GetFiles(path, "*.m4a*", System.IO.SearchOption.AllDirectories);
+            var d = Directory.GetFiles(path, "*.*", System.IO.SearchOption.AllDirectories).Where(s => s.EndsWith(".mp3") || s.EndsWith(".m4a")); 
             try
             {
             	foreach(string str in d)
