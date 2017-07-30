@@ -37,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbxAlbum = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblSongId = new System.Windows.Forms.Label();
+            this.lblAlbumId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtSongURLName
@@ -117,11 +119,31 @@
             this.label1.TabIndex = 46;
             this.label1.Text = "Álbum";
             // 
+            // lblSongId
+            // 
+            this.lblSongId.AutoSize = true;
+            this.lblSongId.Location = new System.Drawing.Point(12, 127);
+            this.lblSongId.Name = "lblSongId";
+            this.lblSongId.Size = new System.Drawing.Size(18, 13);
+            this.lblSongId.TabIndex = 51;
+            this.lblSongId.Text = "id:";
+            // 
+            // lblAlbumId
+            // 
+            this.lblAlbumId.AutoSize = true;
+            this.lblAlbumId.Location = new System.Drawing.Point(151, 127);
+            this.lblAlbumId.Name = "lblAlbumId";
+            this.lblAlbumId.Size = new System.Drawing.Size(50, 13);
+            this.lblAlbumId.TabIndex = 52;
+            this.lblAlbumId.Text = "Album id:";
+            // 
             // frmEdit_Song
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 154);
+            this.Controls.Add(this.lblAlbumId);
+            this.Controls.Add(this.lblSongId);
             this.Controls.Add(this.txtSongURLName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnOk);
@@ -154,6 +176,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbxAlbum;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSongId;
+        private System.Windows.Forms.Label lblAlbumId;
 
     }
 }

@@ -130,14 +130,27 @@ namespace migh.admin
                                 albums.Add(album);
                             }
                         }
-                        while (Song.id_exists(admin.Library.song_list, song.id))
+                        List<int> ids = new List<int>();
+                        foreach(Song so in admin.Library.song_list)
+                        {
+                            ids.Add(so.id);
+                        }
+                        foreach (Song so2 in songs)
+                        {
+                            ids.Add(so2.id);
+                        }
+                        while (ids.Contains(song.id))
                         {
                             song.id++;
                         }
-                        while(Song.id_exists(songs, song.id))
-                        {
-                            song.id++;
-                        }
+                        //while (Song.id_exists(songs, song.id))
+                        //{
+                        //    song.id++;
+                        //    while (Song.id_exists(songs, song.id) && Song.id_exists(admin.Library.song_list, song.id))
+                        //    {
+                        //        song.id++;
+                        //    }
+                        //}
                         song.artist_id = artist.id;
                         song.album_id = album.id;
                         song.name = tagfile.Tag.Title;

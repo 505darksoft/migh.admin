@@ -58,6 +58,8 @@ namespace migh.admin
                 txtAlbumName.Text = album_name;
                 txtCoverURL.Text = cover_url;
                 txtAlbumURLName.Text = album_url_name;
+                lblAlbumId.Text = "id: " + album_id;
+                lblArtistId.Text = "Artist id: " + artist_id;
             }
             catch { }
         }

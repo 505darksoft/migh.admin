@@ -29,6 +29,8 @@ namespace migh.admin
             txtSongName.Text = song_name;
             txtSongURLName.Text = song_url_name;
             txtFileName.Text = song_file_name;
+            lblSongId.Text = "id: " + song_id;
+            lblAlbumId.Text = "Album id: " + album_id;
 
             foreach(Album album in admin.Library.album_list)
             {
