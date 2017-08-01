@@ -104,7 +104,8 @@ namespace migh.admin
                                 artists.Add(artist);
                             }
                         }
-                        Album alb = admin.Library.album_list.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.Album.ToLower()));
+                        
+                        Album alb = admin.Library.album_list.FirstOrDefault(a => a.name.ToLower().Equals(tagfile.Tag.Album.ToLower()) && a.artist_id == artist.id);
                         if (alb != null)
                         {
                             album = alb;
