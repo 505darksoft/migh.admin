@@ -183,7 +183,6 @@ C:\migh.admin\migh.admin\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
 C:\migh.admin\migh.admin\bin\Debug\Newtonsoft.Json.dll
 C:\migh.admin\migh.admin\bin\Debug\ICSharpCode.SharpZipLib.Fakes.xml
 C:\migh.admin\migh.admin\bin\Debug\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
-C:\migh.admin\migh.admin\obj\Debug\migh.admin.csprojFakesResolveAssemblyReference.cache
 C:\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Album.resources
 C:\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Artist.resources
 C:\migh.admin\migh.admin\obj\Debug\migh.admin.frmAdd_Song.resources
